@@ -1,0 +1,22 @@
+{
+  "name": "code_next",
+  "version": "1.0.0",
+  "description": "",
+  "main": "advanced-challenge.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeNext-CSSI-OAK/codenext-cssi-2018-Cfr4nc0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeNext-CSSI-OAK/codenext-cssi-2018-Cfr4nc0/issues"
+  },
+  "homepage": "https://github.com/CodeNext-CSSI-OAK/codenext-cssi-2018-Cfr4nc0#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
+}
