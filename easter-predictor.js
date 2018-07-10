@@ -36,7 +36,7 @@ console.log("the value of k is" + k);
 let r = Math.floor((32 + 2 * e + 2 * i - h - k )% 7);
 console.log("the value of r is" + r);
 
-let m = Math.floor(( a + 11 * h + 22 * r)% 451);
+let m = Math.floor(( a + 11 * h + 22 * r)/ 451);
 console.log("the value of m is" + m);
 
 let n = Math.floor((h + r - 7 * m + 114)/ 31);
@@ -44,3 +44,5 @@ console.log("the value of n is" + n);
 
 let p = Math.floor((h + r - 7 * m + 114)% 31);
 console.log("the value of p is" + p);
+
+console.log("Easter will be on " + n + "/" + (p+1));
