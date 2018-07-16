@@ -1,4 +1,4 @@
-//Author: FirstName LastName
+//Author: Carmen Franco
 
 /******************************************************************************
                                    sumDouble
@@ -16,7 +16,12 @@ sumDouble(2, 2) → 8
 
 
 function sumDouble(a, b) {
-
+  if (a === b) {
+    return (a + b) * 2;
+} else {
+  console.log('not equal');
+  return a + b;
+  }
 }
 
 
@@ -35,7 +40,13 @@ makes10(1, 9) → true
 
 
 function makes10(a, b) {
-
+if (a === 10 || b === 10 || a + b === 10){
+  console.log('true');
+  return (a, b);
+} else {
+  return a + b;
+  console.log('false');
+}
 }
 
 
@@ -55,7 +66,10 @@ parrotTrouble(false, 6) → false
 *******************************************************************************/
 
 function parrotTrouble(talking, hour) {
-
+  if (talking && (hour < 7 || hour > 20)) {
+return true;
+}
+  return false;
 }
 
 
@@ -76,7 +90,16 @@ alarmClock(0, false) → "10:00"
 *******************************************************************************/
 
 function alarmClock(day, vacation) {
+if(vacation){
+  if(day >= 1 && day <= 5)
+  return "7:00"
+} else {
+  day = 0 || day = 6
+  return "10:00"
 
+} else {
+
+}
 }
 
 
@@ -98,7 +121,14 @@ caughtSpeeding(65, true) → 0
 *******************************************************************************/
 
 function caughtSpeeding(speed, isBirthday) {
-
+if (isBirthday) {
+  speed -= 5
+  return 0;
+} else if (speed >= 61 && speed <= 80){
+  return 1;
+} else {
+  return 2;
+}
 }
 
 /****************************************************************************
