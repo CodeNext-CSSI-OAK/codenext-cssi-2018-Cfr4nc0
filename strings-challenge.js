@@ -1,4 +1,4 @@
-//Author: FirstName LastName
+//Author: Carmen Franco
 
 /******************************************************************************
                                    withoutEnd()
@@ -15,7 +15,7 @@ withoutEnd("coding") → "odin"
 *******************************************************************************/
 
 function withoutEnd(str) {
-
+  return str.substring(1, str.length -1);
 }
 
 // Test this function.
@@ -37,7 +37,7 @@ frontAgain("ed") → true
 
 
 function frontAgain(str) {
-
+ return str.substring(0,1);
 }
 
 // Test this function.
@@ -58,7 +58,7 @@ deFront("away") → "aay"
 *******************************************************************************/
 
 function deFront(str) {
-
+let finChar = str.endsWith("llo");
 }
 
 // Test this function.
@@ -80,7 +80,7 @@ without2("Hi") → ""
 *******************************************************************************/
 
 function without2(str) {
-
+//let noTwo =
 }
 
 // Test this function.

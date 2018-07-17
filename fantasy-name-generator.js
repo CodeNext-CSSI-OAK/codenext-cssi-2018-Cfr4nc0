@@ -1,8 +1,14 @@
-// Author: FirstName LastName
+// Author: Carmen Franco
 var readline = require("readline-sync");
 
 // global variables
-var firstName, lastName, momMaidenName, cityBorn, dreamCar, street, fantasyName;
+let firstName;
+let lastName;
+let momMaidenName;
+let cityBorn;
+let dreamCar;
+let street;
+let fantasyName;
 
 /******************************************************************************
                                   getNewFirstName()
@@ -13,8 +19,10 @@ var firstName, lastName, momMaidenName, cityBorn, dreamCar, street, fantasyName;
 *******************************************************************************/
 
 function getNewFirstName() {
+  return firstName.substring(0,3) + lastName.substring(0,2);
 
 }
+
 
 /******************************************************************************
                                   getNewLastName()
@@ -25,9 +33,9 @@ function getNewFirstName() {
 *******************************************************************************/
 
 function getNewLastName() {
-
+  return momMaidenName.substring(0,3) + cityBorn.substring(0,2);
 }
-
+//testGetNewLastName
 /******************************************************************************
                                   getTitle()
 
@@ -36,7 +44,7 @@ function getNewLastName() {
 *******************************************************************************/
 
 function getTitle() {
-
+return lastName.charAt(lastName.length -1)+ lastName.charAt(lastName.length -2)+ lastName.charAt(lastName.length -3);
 }
 
 /******************************************************************************
@@ -47,7 +55,7 @@ function getTitle() {
 *******************************************************************************/
 
 function getHonorific() {
-
+return " of" + street;
 }
 
 /******************************************************************************
@@ -61,6 +69,13 @@ function getHonorific() {
 *******************************************************************************/
 
 function run() {
+firstName = readline.question ('What is your first name?');
+lastName = readline.question ('What is your last name?');
+momMaidenName = readline.question ('What is your mums maiden name?');
+cityBorn = readline.question('What city were you born in?');
+dreamCar = readline.question('What is your dream car?')
+street = readline.question('What street do you live in?');
+console.log(getNewFirstName()+ " " + getNewLastName()+ " "+ getTitle()+"," + getHonorific());
 
 }
 
