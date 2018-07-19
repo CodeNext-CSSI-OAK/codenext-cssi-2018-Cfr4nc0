@@ -14,7 +14,11 @@ stringTimes("Hi", 1) → "Hi"
 *******************************************************************************/
 
 function stringTimes(str, n) {
-
+  let returnString = "";
+for (let i = 0; i < n ; i++){
+returnString = str;
+}
+return returnString;
 }
 
 // Test this function.
@@ -34,8 +38,14 @@ countXX("xxxx") → 3
 *******************************************************************************/
 
 function countXX(str) {
-
+  let count = 0;
+    for(let i = 0; i < str.length - 1; i++){
+       if(str.substring(i , i + 2) === "xx"){
+     count++;
 }
+  }
+  return count;
+  }
 
 // Test this function.
 testCountXX();
@@ -54,8 +64,14 @@ bobThere("bac") → false
 *******************************************************************************/
 
 function bobThere(str) {
+     for(let i = 0; i < str.length; i++){
+       if(str.charAt(i) === "b" && str.charAt(i + 2) === "b"){
+        return true;
+     }
+   }
+return false;
+   }
 
-}
 
 // Test this function.
 testBobThere();
@@ -74,6 +90,13 @@ countCode("cozexxcope") → 2
 *******************************************************************************/
 
 function countCode(str) {
+  let count = 0;
+for(let i = 0; i < str.length; i++){
+  if(str.charAt(i) === "c" && str.charAt(i + 1) === "o" && str.charAt(i + 3) === "e"){
+   count++;
+ }
+}
+return count;
 
 }
 
@@ -97,7 +120,9 @@ xyBalance("bbb") → true
 *******************************************************************************/
 
 function xyBalance(str) {
+for(let i = 0; i < str.length; i++){
 
+}
 }
 
 // Test this function.
